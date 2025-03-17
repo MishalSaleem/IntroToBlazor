@@ -1,0 +1,135 @@
+@page "/card"
+
+@* Navbar *@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+@* Card Layout *@
+<div class="container mt-4">
+    <div class="row">
+        @* First row - 2 cards *@
+        <div class="col-md-6">
+            <div class="card">
+                <div class="image-container">
+                    <img src="https://www.mercedes-benz.co.za/content/dam/hq/passengercars/campaigns/because-it-is-mercedes-benz/ease/08-2024/images/mercedes-benz-because-it-is-mercedes-benz-ease-hotspot-start-3302x1858-08-2024.jpg/1740020364260.jpg?im=Resize=(1850);Crop,rect=(0,0,1850,1040)" class="card-img-top" alt="Car 1">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card 1</h5>
+                    <p class="card-text">Description for Card 1.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="image-container">
+                    <img src="https://wallup.net/wp-content/uploads/2016/01/136512-Mercedes-Benz-supercars-748x421.jpg" class="card-img-top" alt="Car 2">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card 2</h5>
+                    <p class="card-text">Description for Card 2.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        @* Second row - 3 cards *@
+        <div class="col-md-4">
+            <div class="card">
+                <div class="image-container">
+                    <img src="https://www.mercedes-benz.co.in/content/dam/hq/passengercars/cars/a-class/hatchback-w177-fl-pi/amg/exterior/12-2022/Images/mercedes-amg-a-class-w177-exterior-35-radiator-grill-2176x1224-12-2022.jpg/1740016844946.jpg?im=Resize=(1280);Crop,rect=(0,0,1280,720)" class="card-img-top" alt="Car 3">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card 3</h5>
+                    <p class="card-text">Description for Card 3.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="image-container">
+                    <img src="https://blog.sothebysrealty.co.uk/hubfs/shutterstock_2211515443-jpg.jpeg" class="card-img-top" alt="Car 4">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card 4</h5>
+                    <p class="card-text">Description for Card 4.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="image-container">
+                    <img src="https://i.ytimg.com/vi/ijMntCKs25U/hqdefault.jpg" class="card-img-top" alt="Car 5">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card 5</h5>
+                    <p class="card-text">Description for Card 5.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* CSS for uniform image sizes *@
+<style>
+    .image-container {
+        width: 100%;
+        height: 200px; 
+        overflow: hidden;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+
+    .card {
+        height: 100%; 
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+</style>
